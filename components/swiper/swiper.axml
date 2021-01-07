@@ -1,0 +1,17 @@
+<view>
+  <scroll-view class="scroll-view" scroll-x scroll-into-view="{{sId}}" scroll-with-animation="{{true}}" scroll-animation-duration="{{500}}" onTouchStart="onTouchStart" onTouchEnd="onTouchEnd" style="width: 100%">
+    <view id="{{0}}" class="scroll-item"></view>
+    <block a:for="{{list}}">
+      <view id="{{index + 1}}" class="scroll-item {{sId==index?'center-item':(sId==index+1?'align-left':(sId==index-1?'align-right':''))}}">
+        <view class="scroll-content">
+          <view class="scroll-image">
+            <image src="{{item.pic}}"/>
+          </view>
+          <!-- <view class="scroll-text">{{item.text}}</view> --> 
+          
+        </view>
+      </view>
+    </block>
+    <view id="{{list.length + 1}}" class="scroll-item"></view>
+  </scroll-view>
+</view>

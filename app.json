@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "pages/swiper-page/swiper-page",
+    "pages/index/index"
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  }
+}

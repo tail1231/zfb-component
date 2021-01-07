@@ -1,0 +1,67 @@
+@keyframes changeBigger {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes changeSmaller {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.scroll-view {
+  padding-top: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 800rpx;
+}
+.scroll-view .scroll-item {
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 53rpx;
+  height: 700rpx;
+  transition: all 0.1s;
+}
+.scroll-view .scroll-item .scroll-content {
+  width: 100%;
+  height: 100%;
+}
+.scroll-view .scroll-item .scroll-content .scroll-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12rpx;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.scroll-view .scroll-item .scroll-content .scroll-image image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.scroll-view .scroll-item .scroll-content .scroll-text {
+  margin-top: 30rpx;
+  text-align: center;
+}
+.scroll-view .center-item {
+  width: 580rpx;
+  height: 860rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -290rpx;
+}
+.scroll-view .align-right {
+  position: absolute;
+  right: 0;
+}
+.scroll-view .align-left {
+  position: absolute;
+  left: 0;
+}

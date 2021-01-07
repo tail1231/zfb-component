@@ -1,0 +1,3 @@
+<view>
+  <my-swiper list="{{list}}"></my-swiper>
+</view>
